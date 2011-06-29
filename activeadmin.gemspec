@@ -17,12 +17,12 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency("rails", ">= 3.1.0.rc4")
-  s.add_dependency("meta_search", ">= 0.9.2")
+  s.add_dependency("rails", "= 3.1.0.rc4")
+  s.add_dependency("meta_search", "~> 1.1.0.pre")
   s.add_dependency("devise", ">= 1.1.2")
   s.add_dependency("formtastic", ">= 1.1.0")
   s.add_dependency("inherited_resources", ">= 0")
   s.add_dependency("kaminari", ">= 0.12.4")
-  s.add_dependency("sass", ">= 3.1.0")
+  s.add_dependency("sass-rails", "~> 3.1.0.rc.2")
   s.add_dependency("fastercsv", ">= 0")
 end
