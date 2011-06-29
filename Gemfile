@@ -4,10 +4,10 @@ gemspec
 
 require File.expand_path('../spec/support/detect_rails_version', __FILE__)
 
-gem 'rails',          "= 3.1.#{$1}"
+gem 'rails',          "= 3.1.0.rc4"
 gem "meta_search",    '>= 1.1.0.pre'
 gem "uglifier"
-gem 'sass-rails',     "~> 3.1.0.rc"
+gem 'sass-rails',     "~> 3.1.0.rc.2"
 gem 'coffee-script'
 gem 'execjs'
 gem 'therubyracer'
