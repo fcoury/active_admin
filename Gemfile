@@ -4,19 +4,13 @@ gemspec
 
 require File.expand_path('../spec/support/detect_rails_version', __FILE__)
 
-case detect_rails_version
-when /3.0.(\d)*/
-  gem 'rails',          "= 3.0.#{$1}"
-  gem "meta_search",    '~> 1.0.0'
-when /3.1.(.*)/
-  gem 'rails',          "= 3.1.#{$1}"
-  gem "meta_search",    '>= 1.1.0.pre'
-  gem "uglifier"
-  gem 'sass-rails',     "~> 3.1.0.rc"
-  gem 'coffee-script'
-  gem 'execjs'
-  gem 'therubyracer'
-end
+gem 'rails',          "= 3.1.#{$1}"
+gem "meta_search",    '>= 1.1.0.pre'
+gem "uglifier"
+gem 'sass-rails',     "~> 3.1.0.rc"
+gem 'coffee-script'
+gem 'execjs'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3-ruby',   :require => 'sqlite3'
